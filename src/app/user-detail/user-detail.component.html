@@ -6,7 +6,10 @@
       Jelenítsd meg a user négy tulajdonságát egymás alatti p elemekben:
       id, name, email, address
      -->
-
+    <p>id: {{ user.id }}</p>
+    <p>name: {{ user.name }}</p>
+    <p>email: {{ user.email }}</p>
+    <p>address: {{ user.address }}</p>
 
 
     <p>
@@ -17,7 +20,9 @@
         3. Állítsd be a gombra event-binding segítségével a click
         eseményre az onDelete metódust és add át neki a user -t.
        -->
-
+      <button class="btn btn-danger btn-block">
+        <i (click)="onDelete(user)" class="fa fa-trash"> delete</i>
+      </button>
 
 
     </p>
